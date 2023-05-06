@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.2">
+  <object class="ttk.Frame" id="frmWorking">
+    <property name="height">800</property>
+    <property name="width">1200</property>
+    <layout manager="pack">
+      <property name="fill">both</property>
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="tk.OptionMenu" id="opt_file_working">
+        <property name="value">File</property>
+        <property name="values">New,Open,Save,Save as</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.052</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.OptionMenu" id="opt_edit_woking">
+        <property name="value">Edit</property>
+        <property name="values">Find</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.052</property>
+          <property name="relx">0.052</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.OptionMenu" id="opt_add_working">
+        <property name="value">Manage</property>
+        <property name="values">Manage Autofix,Manage Dict</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.104</property>
+          <property name="width">85</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="txt_file">
+        <property name="blockcursor">true</property>
+        <property name="height">41</property>
+        <property name="state">disabled</property>
+        <property name="takefocus">false</property>
+        <property name="undo">false</property>
+        <property name="width">140</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.06</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btn_next_word">
+        <property name="text" translatable="yes">Next Word</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.90</property>
+          <property name="rely">0.90</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_ErrorNumber">
+        <property name="text" translatable="yes">Found 0 error(s)</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.0</property>
+          <property name="relx">0.03</property>
+          <property name="rely">0.91</property>
+          <property name="width">500</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_StatusSave">
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.0</property>
+          <property name="relx">0.4</property>
+          <property name="rely">0.91</property>
+          <property name="width">500</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+  <object class="ttk.Frame" id="frmFind">
+    <property name="height">250</property>
+    <property name="width">600</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="ttk.Entry" id="txt_Find">
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relheight">0.1</property>
+          <property name="relwidth">0.9</property>
+          <property name="relx">0.05</property>
+          <property name="rely">0.15</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="txt_Replace">
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relheight">0.1</property>
+          <property name="relwidth">0.9</property>
+          <property name="relx">0.05</property>
+          <property name="rely">0.5</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_Find">
+        <property name="anchor">n</property>
+        <property name="compound">top</property>
+        <property name="font">TkTextFont</property>
+        <property name="text" translatable="yes">Find:</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relheight">0.1</property>
+          <property name="relwidth">0.09</property>
+          <property name="relx">0.02</property>
+          <property name="rely">0.03</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_Replace">
+        <property name="anchor">n</property>
+        <property name="compound">top</property>
+        <property name="font">TkTextFont</property>
+        <property name="text" translatable="yes">Replace with:</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relheight">0.1</property>
+          <property name="relwidth">0.16</property>
+          <property name="relx">0.02</property>
+          <property name="rely">0.4</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btnFind">
+        <property name="command" type="command" cbtype="simple">find_text</property>
+        <property name="text" translatable="yes">Find</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.65</property>
+          <property name="rely">0.7</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btnReplace">
+        <property name="command" type="command" cbtype="simple">replace_text</property>
+        <property name="text" translatable="yes">Replace all</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.85</property>
+          <property name="rely">0.7</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_Message">
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relheight">0.1</property>
+          <property name="relwidth">0.55</property>
+          <property name="relx">0.05</property>
+          <property name="rely">0.7</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+  <object class="ttk.Frame" id="frmAutofix">
+    <property name="height">250</property>
+    <property name="width">600</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="lb_Input">
+        <property name="text" translatable="yes">Input</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.25</property>
+          <property name="rely">0.11</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_Output">
+        <property name="text" translatable="yes">Output</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.7</property>
+          <property name="rely">0.11</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="txt_Input">
+        <property name="height">9</property>
+        <property name="width">30</property>
+        <property name="wrap">word</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.075</property>
+          <property name="rely">0.22</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="txt_Output">
+        <property name="height">9</property>
+        <property name="width">30</property>
+        <property name="wrap">word</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.52</property>
+          <property name="rely">0.22</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btnOk">
+        <property name="text" translatable="yes">Save</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.82</property>
+          <property name="rely">0.85</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_Autofix">
+        <property name="text" translatable="yes">Auto fix</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.01</property>
+          <property name="rely">0.01</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+  <object class="ttk.Frame" id="frmIgnore">
+    <property name="height">250</property>
+    <property name="width">600</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="lb_Word">
+        <property name="text" translatable="yes">Ignore Word</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.44</property>
+          <property name="rely">0.11</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="txtInput">
+        <property name="autoseparators">false</property>
+        <property name="height">9</property>
+        <property name="width">50</property>
+        <property name="wrap">word</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.17</property>
+          <property name="rely">0.22</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="lb_Ignore">
+        <property name="text" translatable="yes">Ignore Word</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.01</property>
+          <property name="rely">0.01</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="btnSave">
+        <property name="text" translatable="yes">Save</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.735</property>
+          <property name="rely">0.85</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,436 @@
+   corporate VINICORP
+Ảnh 3: Maven Market trên Udemy.com	17
+corporate ghjfgh
+rumbling
+xoong
+Công ty Cổ phần Tổng hợp Việt Nhật Ngô Phúc Lươn
+    BỘ CÔNG THƯƠNG
+    TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP HÀ NỘI
+    KHOA ĐIỆN TỬ
+
+kiểm tra lỗi sai  .ê
+sao laij   wwwww vinicorp
+chao vinic vinic vinic
+
+ồ hay thế aff
+Báo cáo thực tập doanh nghiệp tại
+Công ty Cổ phần Tổng hợp Việt Nhật
+	
+
+Sinh viên
+:
+Ngô Phúc Lương
+Mã sinh viên
+:
+2018601540
+Lớp
+:
+2018TTMT01
+Khóa
+:
+13
+Giáo viên hướng dẫn
+:
+TS Nguyễn Thị Diệu Linh
+ 
+  
+the rumbling
+      
+      
+      
+      
+      
+      Hà Nội, ngày 18 tháng 03 năm 2022
+
+MỤC LỤC
+MỤC LỤC	1
+DANH MỤC CÁC TỪ VIẾT TẮT	3
+DANH MỤC HÌNH ẢNH	4
+DANH MỤC SƠ ĐỒ	4
+LỜI NÓI ĐẦU	5
+CHƯƠNG 1: GIỚI THIỆU TỔNG QUAN VỀ  CÔNG TY CỔ PHẦN TỔNG HỢP VIỆT NHẬT – VINICORP	7
+I.	Quá trình hình thành và phát triển của công ty:	7
+II.	Cơ cấu tổ chức các phòng ban của công ty:	8
+1.	Ban giám đốc:	9
+2.	Phòng Kế toán – Hành chính nhân sự:	9
+3.	Phòng IT – Network:	9
+4.	Phòng Kinh doanh:	10
+5.	Phòng Phát triển – DEV2, DEV3, DEV4, DEV6:	10
+III.	Quy định bảo mật nội bộ tại công ty	10
+1.	Khái niệm bảo mật	10
+2.	Quy định bảo mật tại Công ty Cổ phần Tổng hợp Việt Nhật – Vinicorp	11
+CHƯƠNG 2: Quá trình thực tập	13
+I.	Các khái niệm cơ bản trong ngành dữ liệu	13
+II.	Vị trí và nhiệm vụ công việc	13
+1.	Vị trí	13
+2.	Nhiệm vụ cần thực hiện	14
+III.	Quy trình xây dựng hệ thống Báo cáo thông minh:	17
+1.	Giai đoạn U0 – Business Planning:	18
+2.	Giai đoạn U1 – User Requirements:	18
+3.	Giai đoạn J0 – J1 – J2: System Planning, Theory and Physical Designing:	18
+4.	Giai đoạn J3: Development and Test:	19
+5.	Giai đoạn J4: User Confirmation:	22
+6.	Giai đoạn P0: Go-live:	22
+CHƯƠNG 3: KẾT QUẢ THỰC TẬP	24
+I.	Nhận xét chung về việc tổ chức và triển khai dự án tại Vinicorp	24
+1.	Ưu điểm	24
+2.	Nhược điểm	24
+3.	Kết luận	25
+KẾT LUẬN	26
+DANH MỤC TÀI LIỆU THAM KHẢO	27
+
+
+
+DANH MỤC CÁC TỪ VIẾT TẮT
+
+Vinicorp
+:
+Công ty Cổ phần Tổng hợp Việt Nhật
+DA
+:
+Data Analysis
+PM
+:
+Project Manager
+Dev
+:
+Developer
+BA
+:
+Business Analysis
+BI
+:
+Business Intelligence
+DW
+:
+Data Warehouse
+DM
+:
+Data Mart
+DB
+:
+Database
+Môi trường UAT
+:
+User Acceptance Testing Environment
+Môi trường PRD
+:
+Production Environment
+SRS
+BMTT
+ETL
+:
+:
+:
+Software Requirement Specification
+Bảo mật thông tin
+Extract – Transform – Load (Công cụ trích xuất dữ liệu)
+
+
+
+DANH MỤC HÌNH ẢNH
+Ảnh 1: Dữ liệu ngoại lai (Outliers)	13
+Ảnh 2: Dashboard biểu diễn mức độ hạnh phúc của các quốc gia theo năm	13
+Ảnh 3: Bản báo cáo mẫu với dữ liệu của Maven Market trên Udemy.com	17
+Ảnh 4: Một phần của hàm xác đinh tỷ lệ phần trăm giống nhau giữa 2 trường	19
+
+
+DANH MỤC SƠ ĐỒ
+Sơ đồ 1: Cơ cấu tổ chức của công ty Vinicorp	4
+Sơ đồ 2: Quy trình phát triển phần mềm theo mô hình Thác nước	8
+Sơ đồ 3: Dòng chảy dữ liệu của hệ thống Báo cáo thông mình	10
+Sơ đồ 4: Quy trình ETL – Extract, Transform and Load	11
+Sơ đồ 5: Các bước cơ bản của giai đoạn Go-live dự án	14
+
+
+
+
+LỜI NÓI ĐẦU
+
+	Ngày nay, với sự bùng nổ của cuộc Cách mạng Công nghiệp 4.0, kéo theo đó sự phát triển mạnh của lĩnh vực công nghệ cao như Trí tuệ nhân tạo (AI), Internet kết nối vạn vật (IOTs), Dữ liệu lớn (Big Data), …. Theo báo cáo của Công ty Nghiên cứu thị trường IDC (Hoa Kỳ) cho thấy, mỗi ngày thế giới tạo ra khoảng 2,5 quintillion byte dữ liệu, và con số này vẫn không ngừng gia tăng. Đồng thời báo cáo cũng chỉ ra rằng 90% dữ liệu trên thế giới hiện nay được tạo ra trong 3 năm gần đây. Có thể nói nguồn dữ liệu khổng lồ này là một kho báu chưa được khai thác một cách tối đa và hiệu quả. Nắm được trong tay những kỹ thuật, phương pháp trích xuất, xử lý và phân tích dữ liệu sẽ là chìa khóa để một doanh nghiệp đạt được những bước tiến vượt trội về mọi mặt. Và đây là cơ hội đồng thời cũng là thách thức lớn đối với các doanh nghiệp tại Việt Nam. 
+	Biết được điều đó, trong gần 3 năm trở lại đây, Công ty Cổ phần Tổng hợp Việt Nhật – Vinicorp đã tiến hành việc nghiên cứu, ứng dụng các công nghệ kỹ thuật mới vào khai thác, xử lý và phân tích dữ liệu cho bản thân công ty cũng như các đối tác lớn khác. Một trong những ứng dụng nổi bật và được áp dụng rộng rãi nhất là Báo cáo thông minh. Với kiến thức tích lũy được trong quá trình học tập và làm việc tại Vinicorp, em xin chọn đề tài: “Báo cáo thực tập doanh nghiệp tại Công ty Cổ phần Tổng hợp Việt Nhật Vinicorp”.
+Đề tài được kết cấu gồm 3 chương:
+      Chương 1: Giới thiệu tổng quan về công ty Cổ phần Tổng hợp Việt Nhật.
+Chương 2: Quá trình thực tập.
+      Chương 3: Kết quả thực tập.
+	Để hoàn thiện tốt đề tài này, trước hết, em xin cảm ơn Ban Giám đốc và các anh chị phòng Phát triển 2 của công ty Cổ phần Tổng hợp Việt Nhật, đặc biệt là anh Trần Thanh Hùng, đã tạo điều kiện thuận lợi và tận tình hướng dẫn cho em làm việc tại công ty trong thời gian qua. Và em cũng xin gửi lời cảm ơn tới cô Nguyễn Thị Diệu Linh đã nhiệt tình hướng dẫn, đóng góp ý kiến, giải đáp những thắc mắc cho em trong quá trình viết đề tài. 
+	Tuy nhiên, do hạn chế về kiến thức và kinh nghiệm thực tiễn cũng như sự giới hạn về thời gian, bài viết em không thể tránh khỏi những thiếu sót cả về nội dung lẫn hình thức. Em rất mong nhận được sự chỉ bảo, góp ý quý báu của thầy cô để giúp em rút ra được những kinh nghiệm và cải thiện hơn trong quá trình học tập và công tác sau này.
+
+        						Hà Nội, ngày 18 tháng 03 năm 2022
+         								 Sinh viên thực hiện
+    
+         		
+    
+    			
+    								Ngô Phúc Lương
+
+
+CHƯƠNG 1: GIỚI THIỆU TỔNG QUAN VỀ 
+CÔNG TY CỔ PHẦN TỔNG HỢP VIỆT NHẬT – VINICORP
+
+I. Quá trình hình thành và phát triển của công ty:
+    Công ty Cổ phần Tổng hợp Việt Nhật (tên viết tắt: VINICORP) được thành lập tháng 05/2007 và có trụ sở chính tại Hà Nội, Việt Nam. VINICORP chuyên cung cấp dịch vụ gia công và phát triển phần mềm chất lượng cao cho các doanh nghiệp Nhật Bản tại thị trường Nhật Bản, Việt Nam và Singapore. Với hơn 90% khách hàng của VINICORP là các doanh nghiệp Nhật Bản trong và ngoài nước. 
+Tên công ty
+:
+Công ty Cổ phần Tổng hợp Việt Nhật (VINICORP)
+Tên đăng ký kinh doanh
+:
+Viet Nhat General Joint Stock Company
+Ngày thành lập
+:
+04/05/2007
+Vốn điều lệ
+:
+12,000,000,000 VND
+Địa chỉ
+:
+Tầng 14, Toà nhà ICON4, 243A La Thành, Láng Thượng, Đống Đa, Hà Nội, Việt Nam. 
+Điện thoại
+:
+(+84)-24.3556.3607
+Fax
+:
+(+84)-24.3555.3321
+Email
+:
+info@vinicorp.com.vn
+	Có thể kể đến những cột mốc đánh dấu sự trưởng thành và phát triển của công ty qua lịch sử phát triển như:
+➢ Tháng 05/2007: Thành lập công ty Cổ phần Tổng hợp Việt Nhật (VINICORP).
+➢ Tháng 02/2009: Gia nhập hiệp hội phần mềm Việt Nam (VINASA).
+➢ Tháng 04/2009: Đạt giải thưởng SAO KHUÊ 4 sao (lĩnh vực sản phẩm ưu việt).
+➢ Tháng 10/2010: Hợp tác với công ty viễn thông hàng đầu Nhật Bản.
+➢ Tháng 05/2014: Nhận chứng chỉ Quốc tế ISO 27001:2013 về bảo mật thông tin.
+➢ Tháng 10/2014: Được chọn là Top 30 doanh nghiệp CNTT Hàng đầu Việt Nam năm 2014.
+➢ Tháng 11/2015: Nhận chứng chỉ Quốc tế CMMi Level 3 về quy trình phát triển sản xuất phần mềm.
+➢ Tháng 04/2016: Ứng dụng đầu tiên của Vinicorp đạt trên 3.000.000 lượt tải.
+➢ Tháng 06/2016: Mở khoá đào tạo BSE biết tiếng Nhật phục vụ phát triển kinh doanh tại Nhật Bản.
+➢ Tháng 05/2017: Bắt đầu triển khai mô hình Labo thành công
+➢ Tháng 11/2017: Hợp tác với công ty hàng đầu Nhật Bản về phát triển các ứng dụng quản lý khách hàng.
+➢ 2018 – nay: Giữ mối quan hệ hợp tác với khách hang và tiếp tục phát triển, mở rộng.
+   Ngoài ra, công ty áp dụng các công nghệ bao gồm:
+➢ Ngôn ngữ lập trình: Java, JSP, ASP, C#, C, C++, Objective C, PHP, Visual Basic, Visual C, Node.JS
+➢ Platforms: Salesforce, .Net, COM, J2EE, Ezweb
+➢ OS Server: Microsoft Windows Server, Linux Server(Ubuntu, RedHat …), iOS
+➢ Web Server: IIS, Apache
+➢ RDBMS: Oracle, MS SQL, MySQL, PosgreSQL
+II. Cơ cấu tổ chức các phòng ban của công ty:
+
+
+	Công ty Cổ phần Tổng hợp Việt Nhật được tổ chức theo mô hình trực tuyến chức năng, quyền quyết định tập trung chủ yếu ở Ban giám đốc, trách nhiệm quản lý do các phòng ban chức năng, các trưởng phòng thực hiện.
+	Để thống nhất công tác quản lý, tạo sự xuyên suốt trong quá trình điều hành hoạt động cũng như nâng cao tính hiệu quả từng chức năng và nhiệm vụ của các phòng ban, Ban lãnh đạo được qui định như sau:
+
+1. Ban giám đốc:
+	Trực tiếp tổ chức và điều hành những hoạt động của công ty theo đúng luật, đúng điều lệ của công ty. Đồng thời xác định mục tiêu, xây dựng phương hướng phát triển của công ty ở mọi lĩnh vực công tác kế hoạch, tài chính, đầu tư phát triển…
+   
+2. Phòng Kế toán – Hành chính nhân sự:
+➢ Ghi chép đầy đủ chứng từ, cập nhật sổ sách chứng từ kế toán theo quy định của pháp luật, phản ánh chân thực chính xác các số liệu về tình hình hoạt động sản xuất kinh doanh của công ty.
+➢ Tổ chức thực hiện các nghĩa vụ nộp thuế và các khoản phải nộp ngân sách nhà nước theo quy định của pháp luật, phát hiện và ngăn chặn kịp thời việc sử dụng vốn, tài sản và vật tư sai mục đích.
+➢ Quản lý ngân sách các phòng ban, theo dõi tình hình hoạt động của công ty: doanh thu, chi phí, lợi nhuận.
+
+3. Phòng IT – Network:
+	Tiến hành các hoạt động 2quản trị mạng và hệ thống cơ sở hạ tầng công nghệ thông tin trong công ty (bao gồm tất cả mạng LAN / WAN, không dây và truy cập Internet). Cùng với bảo mật mạng, quản trị mạng và hệ thống bao gồm lưu trữ cơ sở dữ liệu, sử dụng hệ thống đám mây, cài đặt các biện pháp kiểm soát bảo mật (tường lửa, hệ thống phát hiện xâm nhập).
+
+4. Phòng Kinh doanh:
+	Phòng kinh doanh giữ vai trò thúc đẩy, quảng bá và phân phối các sản phẩm, dịch vụ của doanh nghiệp đến tay người tiêu dùng bằng cách áp dụng rất nhiều phương thức khác nhau. Đồng thời giữ vai trò tham mưu cho Ban Giám đốc và phối hợp với các bộ phận, phòng ban khác trong công ty như phòng hành chính, phòng kế toán, phòng tài chính… để xây dựng các chiến lược kinh doanh nhằm gia tăng doanh số, lợi nhuận, giúp công ty tăng trưởng và phát triển ngày càng thêm vững mạnh  .
+
+5. Phòng Phát triển – DEV2, DEV3, DEV4, DEV6:
+	Tiến hành trao đổi, lên kế hoạch và triển khai các dự án về hệ thống báo cáo thông minh, phân tích dữ liệu, phát triển ứng dụng, phần mềm, thiết kế website, …. với các đối tác đến từ nhiều quốc gia khác nhau, trong đó những đối tác lớn nhất đến từ Nhật Bản. 
+Bên cạnh đó, phòng DEV2 có một nhóm chuyên nghiên cứu về các giải pháp công nghệ được hỗ trợ bởi các công cụ Business Intelligence như Tableau, Power BI, SSIS, SQL, ….
+III. Quy định bảo mật nội bộ tại công ty
+1. Khái niệm bảo mật
+   An toàn thông tin: Bao gồm các hoạt động quản lý, nghiệp vụ và kỹ thuật đối với hệ thống thông tin nhằm bảo vệ, khôi phục các hệ thống, các dịch vụ và nội dung thông tin đối với nguy cơ tự nhiên hoặc do con người gây ra. An toàn thông tin bao hàm các nội dung bảo vệ và bảo mật thông tin, an toàn dữ liệu, an toàn máy tính và an toàn mạng.
+   Bảo mật thông tin khách hàng: Bảo mật thông tin của khách hàng là trách nhiệm của các tổ chức tín dụng, các chi nhánh ngân hàng, các cơ quan, tổ chức này không được tự ý tiết lộ thông tin khách hàng ra bên ngoài hay thực hiện bất kì hành vi bất chính nào như việc trục lợi, sử dụng trái phép, mua bán, trao đổi, tặng cho, sửa chữa, thay đổi hoặc công khai hóa thông tin đó.
+   Thông tin cần được bảo mật: Là những thông tin lên quan đến sản phẩm sở hữu trí tuệ và bí mật kinh doanh của Công ty; các sản phẩm trí tuệ và các bí mật kinh doanh của khách hàng/đối tác được trao đổi trong quá trình giao dịch kinh doanh với công ty. Trong quy định này, “những sản phẩm trí tuệ của khách hàng/đối tác” chỉ hạn chế ở những sản phẩm trí tuệ được trao đổi với công ty trong quá trình giao dịch
+2. Quy định bảo mật tại Công ty Cổ phần Tổng hợp Việt Nhật – Vinicorp
+   Trước khi mỗi nhân viên tham gia vào các dự án của công ty đều được ký cam kết bảo mật thông tin đối với khách hang và dữ liệu bên ngoài. Cụ thể: 
+- Điều 1: Về việc sử dụng thông tin mật
+o Chỉ được sử dụng thông tin cần được bảo mật cho mục đích công việc liên quan đến hoạt động sản xuất kinh doanh của Công ty.
+o Không được mang, truyền, gửi thông tin liên quan đến dự án, sản phẩm của Công ty, khách hàng / đối tác ra ngoài phạm vi Công ty, hoặc chia sẻ ra bên ngoài dưới bất kỳ hình thức nào.
+o Không được lưu trữ thông tin của công ty trên ổ lưu trữ internet công cộng hay cá nhân.
+o Phải lưu thông tin quan trọng, thông tin cần bảo mật trên file-server của Công ty, không được lưu trên ổ cứng máy tính cá nhân hay các thiết bị di động cá nhân.
+- Điều 2: Không được mang tài sản, thông tin ra ngoài khu vực làm việc.
+- Điều 3: Làm việc từ xa, ở nhà
+o Trong trường hợp có nhu cầu làm việc từ xa, làm việc ở nhà, thì phải xin phép và được sự phê duyệt của BGĐ.
+o Phải tuân thủ các yêu cầu về cài đặt, sử dụng đối với các kết nối từ xa tới hệ thống thông tin của công ty theo hướng dẫn của Bộ phận Network.
+- Điều 4: Ký hợp đồng BMTT khi ký hợp đồng lao động với công ty.
+- Điều 5: Sử dụng tài sản sở hữu cá nhân cho công việc
+o Không được tự ý sử dụng tài sản sở hữu cá nhân (thiết bị di động, máy tính và thiết bịmạng) cho mục đích công việc.
+- Điều 6: Sử dụng máy tính và thiết bị Công nghệ thông tin
+o Chỉ được sử dụng máy tính và thiết bị CNTT do Công ty cấp vào mục đích công việc và tuân thủ theo các yêu cầu của Công ty về cài đặt và sử dụng.
+- Điều 7: Sử dụng phần mềm
+o Chỉ được sử dụng những phần mềm có trong danh mục phần mềm được phép sử dụng của công ty.
+- Điều 8: Bảo quản tài liệu hồ sơ bản cứng
+o Không được để tài liệu, hồ sơ cần được bảo mật bừa bãi ở các nơi công cộng như máy in, máy photocopy, phòng họp, bàn làm việc, trong tủ không khóa...
+o Phân loại, sắp xếp, bảo quản và lưu giữ các tài liệu, hồ sơ bản cứng cần bảo mật trong tủ có khoá và đảm bảo người khác không thể tiếp cận được.
+
+
+
+CHƯƠNG 2: QUÁ TRÌNH THỰC TẬP
+
+I. Các khái niệm cơ bản trong ngành dữ liệu
+➢ Business Analyst: Là cầu nối giữa team phi kỹ thuật (Marketing, kế toán, kinh doanh, …) với team kỹ thuật (Developer), nhưng có thế mạnh về Business hơn là về Technical.
+➢ Business Intelligence: Là cầu nối giữa team phi kỹ thuật (Marketing, kế toán, kinh doanh, …) với team kỹ thuật (Developer), nhưng có thế mạnh về Technical hơn là về Business. 
+➢ Data Warehouse: Data Warehouse là 1 hệ thống lữu trữ các thông tin kết hợp từ một hay nhiều nguồn khác nhau. Nó được thiết kế chuyên để phân tích, báo cáo, giúp bớt quá trình phân tích thống kê của 1 hệ thống cho 1 tổ chức lớn.
+➢ Data Mart: Data mart là phiên bản thu gọn của Data Warehouse và được thiết kế để sử dụng bởi một bộ phận, đơn vị hoặc nhóm người dùng cụ thể trong một tổ chức.
+➢ Database: Cơ sở dữ liệu là một bộ sưu tập dữ liệu được tổ chức bài bản và thường được truy cập từ hệ thống máy tính hoặc tồn tại dưới dạng tập tin trong hệ quản trị cơ sở dữ liệu.
+➢ Outliers: Những giá trị có thuộc tính khác hoàn toàn so với phần còn lại.
+➢ User Acceptance Testing (UAT): User Acceptance Testing (UAT) là một loại Testing được thực hiện bởi người dùng cuối để xác minh / chấp nhận hệ thống phần mềm trước khi chuyển ứng dụng phần mềm sang môi trường Production.
+➢ Môi trường Production: Môi trường này là nơi quan trọng nhất, là nơi mà người dùng cuối họ truy cập sau tất cả các công đoạn cập nhật và thử nghiệm sản phẩm.
+➢ SRS: Tài liệu được sử dụng để mô tả chi tiết các yêu cầu chức năng và phi chức năng của hệ thống. Tài liệu này sẽ hỗ trợ đưa ra các tính năng của hệ thống hay dùng cho việc đọc hiểu hệ thống của bên thứ ba liên quan đến công ty.
+II. Vị trí và nhiệm vụ công việc
+1. Vị trí
+Em được công ty phỏng vấn và sắp xếp vào vị trí lập trình viên Tableau. Trong đó: 
+- Tableau là phần mềm hỗ trợ phân tích và trực quan hóa dữ liệu (Data Visualization), được dùng nhiều trong ngành BI (Business Intelligence). Cũng giống như Excel, Tableau giúp tổng hợp các dữ liệu nhưng ở một cấp độ cao hơn khi chuyển những liệu này từ các dãy số thành những hình ảnh, biểu đồ trực quan.
+- Lập trình viên Tableau sẽ tiếp nhận các yêu cầu, nghiên cứu, phần tích các yêu cầu đó của khách hàng và xây dựng các báo cáo nhằm giúp khách hàng theo dõi các biến động hay thay đổi một cách hiệu quả nhất
+- Ngoài ra việc sử dụng các công cụ ETL cũng là một phần của công việc để đưa dữ liệu tự động them vào Database 
+2. Nhiệm vụ cần thực hiện
+   Mục tiêu chính của em và nhóm dự án là nghiên cứu, tìm ra những điểm dễ gây hiểu nhầm, khó hiểu hoặc thông tin sai/thiếu trong bản yêu cầu của khách hàng. Sau đó, hai bên sẽ sắp xếp lịch họp trực tuyến để chia sẻ trao đổi về những thông tin trên với mục tiêu tất cả mọi người đều có thể hiểu rõ mình đã, đang và sẽ cần làm chính xác những công việc gì. Sau khi thống nhất về các yêu cầu, nhóm DA của Vinicorp sẽ họp bàn đưa ra những hướng giải quyết tối ưu nhất có thể. Cuối cùng, em sẽ làm một bản báo cáo mẫu để gửi lại phía khách hàng xem xét.
+   Sau đó, nhóm DA bắt đầu viết kế hoạch chi tiết cho việc xây dựng thiết kế báo cáo thông minh này. Đến thời điểm có sự thống nhất giữa 2 bên, em bắt đầu tiến hành tạo báo cáo mẫu mô phỏng các tính năng và một số thiết kế mà khách hàng yêu cầu như màu sắc, bố cục, dạng biểu đồ,…
+
+Ảnh 3: Bản báo cáo mẫu với dữ liệu của Maven Market trên Udemy.com
+									Nguồn: Tác giả thiết kế
+						Link xem báo cáo: https://bitly.com.vn/o4y7ec
+   
+   Ngoài ra, nhóm nghiên cứu sẽ tiến hành quy trình ETL đối với dữ liệu thô nhận được từ phía khách hàng, đồng thời tìm phương án để giải quyết bài toán mà khách hàng đặt ra với dữ liệu. Tùy vào độ phức tạp của dữ liệu mà quá trình ETL sẽ dài hoặc ngắn, nhưng tất cả đều phải đảm bảo đúng quy trình và có sự sao lưu trước khi bị thay đổi.
+
+Ảnh 4: Một phần của hàm xác đinh tỷ lệ phần trăm giống nhau giữa 2 trường
+									Nguồn: Tác giả minh họa
+   
+   Khi đã hoàn thiện báo cáo mẫu, tester của nhóm sẽ tiến hành tạo dữ liệu giả, kiểm tra độ chính xác của báo cáo. Em sẽ tiến hàng sửa lỗi (nếu có). Sau khi hoàn thiện sẽ thống báo với nhóm khách hàng để trình bày về bản báo cáo mẫu, đồng thời trao đổi, yêu cầu phía khách hàng cung cấp tài nguyên, phân quyền truy cập vào dữ liệu mẫu của họ để nghiên cứu, lên phương án xử lý dữ liệu một cách tối ưu.
+   Sau đó, nhóm sẽ tiến hành xây dựng một hệ thống thử nghiệm vận hành ở môi trường UAT của khách hàng. Đây là bước đệm để kiểm tra hệ thống có vận hành một cách trơn tru khi chuyển đổi từ môi trường phát triển của Vendor sang môi trường cấu hình của khách hàng.
+   Cuối cùng, tại bước xây dựng hệ thống ở môi trường PRD, các Dev và BA cần làm tài liệu SRS về Tableau, SQL hoặc Python và tiến hành tạo các báo cáo thông minh mẫu theo yêu cầu của khách hàng. Sau khi được dối tác phê duyệt sẽ thực hiện Go-live theo các bước trong tài liệu. Ở bước này Vendor chỉ là người hỗ trợ, công ty đối tác sẽ tự thực hiện dựa theo tài liệu.
+III. Quy trình xây dựng hệ thống Báo cáo thông minh:
+	Công ty Cổ phần Tổng hợp Việt Nhật hiện đang áp dụng mô hình phát triển các dự án báo cáo thông minh với nền tảng là quy trình phát triển phần mềm (SDLC). Quy trình phát triển phần mềm (SDLC) là một thuật ngữ được sử dụng trong hệ thống kỹ thuật, hệ thống thông tin và công nghệ phần mềm để mô tả một quá trình lập kế hoạch, xây dựng, phát triển, thử nghiệm và triển khai một hệ thống mới.
+   
+Sơ đồ 2: Quy trình phát triển phần mềm theo mô hình Thác nước
+									Nguồn: viblo.asia
+   
+   Tại Vinicorp, quy trình phát triển phần mềm theo mô hình Thác nước đã được biến đổi và phát triển đề phù hợp với tính đặc thù riêng của công ty. Quy trình xây dựng hệ thống báo cáo thông minh trải qua 6 giai đoạn chính gồm Business Planning, User Requirements, System Planning / Theory and Physical Designing, Development and Test, User Confirmation, và cuối cùng là Go-live.
+   
+1. Giai đoạn U0 – Business Planning:
+	Trong bước này cần phải tiến hành phân tích sơ bộ để tìm ra các mục tiêu của đối tác và bản chất và phạm vi của vấn đề đang nghiên cứu. Trong quá trình đào sâu vào các mục tiêu của đối tác và các vấn đề cụ thể, phía Vinicorp sẽ đưa ra một số gợi ý về giải pháp. 	Với những dữ liệu sau quá trình trao đổi giữa 2 bên, tùy vào tình hình cụ thể mà phía đối tác sẽ có hai lựa chọn là cải thiện hoặc phát triển một hệ thống mới. Sau khi thống nhất được phương án giải quyết, nhóm Data Analysis (DA) của Vinicorp sẽ bắt đầu lên kế hoạch chi tiết từng giai đoạn cụ thể, tiến hành phân công công việc cho các thành viên và họp báo cáo lại với đối tác về bản kế hoạch chi tiết này.
+
+2. Giai đoạn U1 – User Requirements:
+	Sau khi đã thống nhất về bản kế hoạch triển khai, phía đối tác sẽ tiến hành tạo và gửi cho nhóm Data Analysis (DA) file chứa những yêu cầu cụ thể, chi tiết nhất như cấu trúc của dữ liệu đầu vào, dữ liệu thô mẫu, các công thức tính toán của từng trường dữ liệu, các tính năng cần có, bản thiết kế mẫu từng màn hình, ý nghĩa của từng khu vực trong báo cáo, đánh giá hiệu suất báo cáo, ….
+	Nhóm DA bao gồm Leader, các Developer và BA (Business Analyst) sẽ tiếp nhận file User Requirements từ đối tác và tiến hành phân tích, làm rõ các yêu cầu, thảo luận về sự khả thi của từng tính năng mà User muốn có. Trong quá trình phân tích nếu phát sinh những điểm chưa rõ ràng, hoặc vấn đề khó khăn, hoặc những đề xuất chỉnh sửa, cải tiến so với yêu cầu của User, nhóm sẽ tạo file Q&A và Issues List để gửi lại cho đối tác để được hỗ trợ, làm rõ, xử lý vấn đề, ….
+
+3. Giai đoạn J0 – J1 – J2: System Planning, Theory and Physical Designing:
+	Trong giai đoạn này, nhóm DA sẽ tạo một mô hình kiến trúc hệ thống (System Architechture). Có thể hiểu kiến trúc hệ thống là mô hình xác định cấu trúc, hành vi và các khung của một hệ thống. Một kiến trúc hệ thống có thể bao gồm các thành phần hệ thống con được phát triển và làm việc nhịp nhàng để đảm bảo sự vận hành ổn định của hệ thống.
+
+
+Sơ đồ 3: Dòng chảy dữ liệu của hệ thống Báo cáo thông mình
+									Nguồn: hyperlogy.com
+	
+	Sau khi đã thiết kế xong kiến trúc hệ thống, nhóm sẽ tiến hành trao đổi lại với đối tác và yêu cầu cấp quyền truy cập, cung cấp hệ thống cơ sở vật chất, tài nguyên, … cần thiết để phục vụ cho việc xây dựng hệ thống Báo cáo thông minh.
+
+4. Giai đoạn J3: Development and Test:
+	Đây là một trong những giai đoạn cốt lõi của toàn bộ dự án, và sẽ được triển khai trên hệ thống máy chủ nội bộ của Vinicorp. Giai đoạn này sẽ trải qua 4 bước bao gồm: làm việc trên Data Mart / Data Warehouse; biến đổi dữ liệu với các công cụ như SSIS, Tableau Prep hoặc Python; trực quan hóa dữ liệu trên Tableau Desktop và cuối cùng là thực hiện quá trình Test hệ thống nội bộ.
+	Đầu tiên, các Dev sẽ tiến hành viết tài liệu mô tả các bảng trên Data Mart / Data Warehouse, sau đó sử dụng các ngôn ngữ truy vấn như MS SQL Server, PostgreSQL, … để tạo các cơ sở dữ liệu, bảng vật lý, tạo các hàm, stored procedure nhằm mục đích xử lý dữ liệu đầu vào, chuẩn bị cho những bước tiếp theo.
+	Sau khi đã xử lý sơ bộ và được sắp xếp lại, những dữ liệu thô sẽ tiến vào quá trình ETL, là viết tắt của trích xuất (Extract), làm sạch và chuẩn hóa (Transform), và tải vào cơ sở dữ liệu đích (Load). Trong bước này chúng ta sử dụng các công cụ như Excel, Tableau Prep, Python, …. Dữ liệu sẽ được trích xuất từ các nguồn dữ liệu hoặc các tệp dữ liệu mẫu rồi định dạng theo quy chuẩn chung, loại bỏ các bản ghi trùng lặp, xem xét thay thế hay loại bỏ những bản ghi trống (null) và các dữ liệu ngoại lai (outlier), tạo thêm các cột mới phục vụ các yêu cầu khác nhau, …. Cuối cùng, những dữ liệu sạch sẽ được tải vào cơ sở dữ liệu đã tạo ở trên.
+
+
+Sơ đồ 4: Quy trình ETL – Extract, Transform and Load
+									Nguồn: lookingforexits.com
+   
+Ảnh 1: Dữ liệu ngoại lai (Outliers)
+									Nguồn: Tác giả minh họa
+   	
+   	Sau khi dữ liệu đã được làm sạch và chuẩn hóa, chúng sẽ được đưa vào Tableau Desktop để tiếp tục tạo thêm các trường tính toán (Calculated Field) cần thiết, biến đổi kiểu dữ liệu và tiến hành trực quan hóa theo các yêu cầu của đối tác.
+   
+
+Ảnh 2: Dashboard biểu diễn mức độ hạnh phúc của các quốc gia theo năm
+									Nguồn: Tác giả minh họa
+
+	Cuối cùng, sau khi việc trực quan hóa dữ liệu kết thúc, các Tester của Vinicorp sẽ chịu trách nhiệm viết các trường hợp kiểm thử (Test Cases) và tiến hành kiểm thử các báo cáo. Nếu trong quá trình kiểm thử phát sinh lỗi, Tester sẽ thông báo lại với phía Dev để cùng tìm hiểu nguyên nhân, xử lý vấn đề đặt ra.
+
+5. Giai đoạn J4: User Confirmation:
+   	Sau khi hoàn tất việc xử lý, thiết kế và kiểm thử hệ thống báo cáo trên máy chủ Vinicorp, BA sẽ có tổng hợp, báo cáo kết quả với khách hàng. Phía khách hàng sau khi nhận được báo cáo sẽ tiếp tục tạo thêm các trường hợp kiểm thử bổ sung và báo lại với nhóm DA về kết quả sau kiểm thử. 
+   	Khi hệ thống báo cáo thông minh vượt qua được tất cả các trường hợp kiểm thử của cả hai bên, BA sẽ yêu cầu cung cấp quyền truy cập vào môi trường UAT của đối tác để tiến hành triển khai hệ thống và kiểm thử bởi người dùng cuối trước khi tiến hành bàn giao lại và triển khai trên môi trường Production.
+6. Giai đoạn P0: Go-live:
+   	Go-live là cột mốc quan trọng của dự án. Nó đánh dấu công ty đã bàn giao đúng dự án như những gì đã cam kết với khách hàng hay chưa. Để đến được bước này, toàn bộ hệ thống đã phải trải qua quá trình kiểm thử chặt chẽ về tất cả mọi mặt như tính năng, hiệu suất hoạt động, trải nghiệm người dùng, … 
+   	Để tiến hành go-live, nhóm DA của Vinicorp sẽ viết tài liệu chi tiết hướng dẫn go-live như cách chạy các câu truy vấn SQL, cách sao lưu và khôi phục dữ liệu trong trường hợp rủi ro, cách tải các báo cáo lên Tableau Server, …. và gửi cho khách hàng những tài liệu này. Bên cạnh đó, BA sẽ đồng thời gửi biểu mẫu xin go-live và xin cấp quyền truy cập vào môi trường Production. Cuối cùng, phía khách hàng sẽ tiến hành go-live theo hướng dẫn, và có thể yêu cầu sự hỗ trợ từ nhóm DA của Vinicorp nếu gặp phải vấn đề khó khăn trong suốt quá trình này.
+   
+Sơ đồ 5: Các bước cơ bản của giai đoạn Go-live dự án
+								Nguồn: hpisconsulting.com
+
+
+CHƯƠNG 3: KẾT QUẢ THỰC TẬP
+
+I. Nhận xét chung về việc tổ chức và triển khai dự án tại Vinicorp
+1. Ưu điểm
+   	Với nền tảng là mô hình Thác nước, quy trình xây dựng và triển hệ thống báo cáo thông minh tại Vinicorp có những ưu điểm sau:
+➢ Dễ bắt kịp tiến độ: Vì tài liệu kỹ thuật là một phần bắt buộc của giai đoạn yêu cầu ban đầu. Vậy nên các thành viên mới có thể nhanh chóng bắt kịp tiến độ dự án.
+➢ Thời gian của từng công việc được chấp hành tốt: Mỗi công việc đều có thời gian bắt đầu và thời gian kết thúc dự kiến trong bản kế hoạch chi tiết, các thành viên của cả 2 bên Vinicorp và khách hàng đều có thể nắm bắt được tiến độ công việc một cách rõ ràng.
+➢ Ít xảy ra rủi ro về tài chính: Chi phí có thể được ước tính một cách gần như chính xác khi nhận được các bản yêu cầu chi tiết từ phía khách hàng.
+➢ Tính chính xác cao: Những gì khách hàng yêu cầu sẽ được Vinicorp thực hiện chính xác tới mức độ chi tiết nhất. Trong trường hợp một bên có bất kỳ thay đổi gì đều sẽ được báo ngay với bên còn lại để thống nhất phương án.
+➢ Dễ để bảo trì do các quá trình được xác định rất rõ ràng.
+
+2. Nhược điểm
+   	Bên cạnh những điểm tích cực kể trên thì mô hình này cũng còn tồn tại một số nhược điểm như:
+➢ Đối với các dự án lớn và phức tạp, mô hình này không tốt vì có nhiều yếu tố rủi ro.
+➢ Không thích hợp cho các dự án phức tạp với yêu cầu được thay đổi thường xuyên trong vòng đời phát triển.
+➢ Khó để quay lại khi giai đoạn đã kết thúc.
+➢ Khó khăn cho khách hàng khi xác định chính xác yêu cầu chi tiết: Khách hàng có thể cảm thấy khó khăn khi khái niệm hóa nhu cầu của họ dưới dạng tính năng, đặc điểm kỹ thuật trong giai đoạn tạo những yêu cầu để gửi cho nhóm phát triển. Điều này có nghĩa là họ có thể thay đổi ý định sau khi họ nhìn thấy sản phẩm cuối cùng.
+
+3. Kết luận
+   	Từ những ưu – nhược điểm được chỉ ra ở trên, có thể thấy rằng chỉ nên áp dụng mô hình này với những dự án vừa và nhỏ, có tính nhất quán, có thể dự đoán được và vòng đời phát triển không quá dài.
+   	Khi sử dụng mô hình Thác nước hoặc các mô hình liên quan, điều quan trọng là các nhà phát triển phải có khả năng hướng dẫn và tư vấn cho khách hàng một cách hiệu quả để khách hàng có thể hiểu và đưa ra yêu cầu với độ chính xác cao, tránh những vấn đề phát sinh sau này. 
+   
+
+
+KẾT LUẬN
+
+	Thế giới mỗi ngày vẫn sản sinh ra lượng dữ liệu vô tận, tuy nhiên không phải tất cả các doanh nghiệp đều biết tận dụng lượng dữ liệu khổng lồ này. Các kỹ thuật trực quan dữ liệu đúng cách, như các báo cáo thông minh sẽ giúp doanh nghiệp có cái nhìn sâu sắc hơn cả về tình hình hoạt động của mình cũng như của các khách hàng. 
+	Với việc trực quan hóa các dữ liệu của công ty, các nhà quản lý, các nhà điều hành có thể tốn ít thời gian hơn vào việc phân tích báo cáo, và có thêm thời gian để phát triển các chiến lược dựa vào các thông tin đó. Đây là điều mà các công cụ truyền thống còn rất hạn chế, nhất là đối với lượng dữ liệu khổng lồ. Vinicorp nhận thấy được những lợi ích mà việc trực quan hóa dữ liệu mang lại từ đó đã phát triển bộ phận Phân tích – Trực quan hóa dữ liệu (DA). Qua hơn 3 năm hình thành và phát triển, nhóm DA với cách làm việc chuyên nghiệp đã đạt được nhiều thành công, được các doanh nghiệp lớn trong và ngoài nước tin tưởng, tín nhiệm để hợp tác phát triển những dự án lớn và quan trọng.
+	Trong bối cảnh thị trường có tính chất thường xuyên thay đổi như hiện nay, cùng với môi trường cạnh tranh khốc liệt. Để công ty có thể đứng vững và không ngừng phát triển, mở rộng thị trường hoạt động kinh doanh của mình, công ty cần đưa ra và thực hiện các chính sách phát triển, đầu tư trọng tâm vào việc đổi mới công nghệ, nâng cao chất lượng nhân sự. Để làm được điều này, công ty cần có những chiến lược đúng đắn cùng với sự nỗ lực làm việc của tất cả các thành viên trong công ty, đồng thời mỗi cá nhân trong công ty phải luôn tự ý thức về vai trò cũng như trách nhiệm của mình trong công việc.
+      Khoảng thời gian thực tập tại công ty đã giúp em kiểm chứng lại những kiến thức đã được học ở trường, liên hệ lý thuyết vào thực tế và tìm ra điểm khác biệt giữa chúng. Mặc dù chỉ là khoảng thời gian ngắn nhưng nhờ sự hướng dẫn tận tình của các anh chị trong công ty mà em đã tích lũy nhiều điều, góp phần hoàn lĩnh vực chuyên môn của mình.
+	Một lần nữa, em xin chân thành cảm ơn cô Nguyễn Thị Diệu Linh, Ban giám đốc và toàn thể các anh chị trong công ty đã giúp em hoàn thành đề tài thực tập giữa khóa này.
+
+
+DANH MỤC TÀI LIỆU THAM KHẢO
+
+1. Nhóm Zuar, 2021, “Data Mart vs Data Warehouse vs Database vs Data Lake”
+https://www.zuar.com/blog/data-mart-vs-data-warehouse-vs-database-vs-data-lake/
+2. Nguyễn Thị Hồng Nhung, 2018, “Quy trình phát triển phần mềm (SDLC)”, Viblo
+https://viblo.asia/p/quy-trinh-phat-trien-phan-mem-sdlc-maGK7Wb9Kj2
+3. Sayan Kumar Pal, 2019, “Software Engineering | Classical Waterfall Model”, Greek for Greeks.
+https://www.geeksforgeeks.org/software-engineering-classical-waterfall-model/
+4. “What is Waterfall Model in SDLC? Advantages and Disadvantages”, Guru99
+https://www.guru99.com/what-is-sdlc-or-waterfall-model.html
+5. Đào Nhật Minh, 2017, “Tổng quan về Business Intelligence (BI)”, Category: Công nghệ, Hyperlogy.
+https://www.hyperlogy.com/vi/tong-quan-ve-business-intelligence 
+6. VBringslimark, 2020, “Do I really need a Go-Live Strategy for Redesigned SOPs?”, HPIS Consulting, Inc.
+http://hpiscblog.hpisconsulting.com/2020/03/need-go-livestrategy/?fbclid=IwAR0nX-AO7-hqZPnUXMChHl1yAmJG4JCNAwUESAuGoYyB-h9dh_uLTWz4wz8
+7. Trang web chính thức của Công ty Cổ phần Tổng hợp Việt Nhật (tên viết tắt: VINICORP) 
+http://www.vinicorp.com.vn/
+
+
+
+
+
+2
+
+
+
+
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

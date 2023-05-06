@@ -1,0 +1,3 @@
+khi soạn văn bản: 10 s check 1 lần
+
+sửa lỗi: sửa tự dộng 1 số case
