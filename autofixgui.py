@@ -23,7 +23,7 @@ class DatnGui1App:
         self.btnOk.configure(text='Save')
         self.btnOk.place(anchor='nw', relx='0.82', rely='0.85', x='0', y='0')
         self.lb_Autofix = ttk.Label(self.frmAutofix)
-        self.lb_Autofix.configure(text='Auto fix')
+        self.lb_Autofix.configure(text='Từ điển sửa')
         self.lb_Autofix.place(anchor='nw', relx='0.01', rely='0.01', x='0', y='0')
         self.frmAutofix.configure(height='250', width='600')
         self.frmAutofix.pack(side='top')

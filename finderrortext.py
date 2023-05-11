@@ -1,3 +1,4 @@
+import os
 from tkinter import filedialog
 import tkinter as tk
 import tkinter.ttk as ttk
@@ -27,7 +28,7 @@ class DatnGui1App:
         self.__tkvar1 = tk.StringVar(value='File')
         self.__tkvar2 = tk.StringVar(value='Edit')
         self.__tkvar3 = tk.StringVar(value='Quản lý')
-        __values = ['File mới', 'Open', 'Save', 'Save as']
+        __values = ['File mới', 'Mở', 'Lưu', 'Lưu thành...']
         self.opt_file_working = tk.OptionMenu(self.frmWorking, self.__tkvar1, *__values, command=self.opt_filepicked)
         self.opt_file_working.place(anchor='nw', relwidth='0.052', x='0', y='0')
         __values = ['Tìm kiếm']
@@ -47,8 +48,8 @@ class DatnGui1App:
         self.btn_Check = ttk.Button(self.frmWorking, command=self.run_check)
         self.btn_Check.configure(text='Kiểm tra (F5)')
         self.btn_Check.place(anchor='nw', relx='0.80', rely='0.95', x='0', y='0')
-        self.txt_file.bind('<Control-s>', lambda event: self.opt_filepicked('Save'))
-        self.txt_file.bind('<Control-Shift-S>', lambda event: self.opt_filepicked('Save as'))
+        self.txt_file.bind('<Control-s>', lambda event: self.opt_filepicked('Lưu'))
+        self.txt_file.bind('<Control-Shift-S>', lambda event: self.opt_filepicked('Lưu thành...'))
         self.txt_file.bind('<F5>', lambda event: self.run_check(None))
         # self.txt_file.bind('<space>', lambda event: self.run_check(None))
         # self.txt_file.bind('<Return>', lambda event: self.run_check(None))
@@ -67,43 +68,50 @@ class DatnGui1App:
         self.mainwindow = self.frmWorking
 
     def opt_filepicked(self, option):
-        if option == 'Open':
+        if option == 'Mở':
             files = [('Text Document', ['*.txt', '*.docx', '*.doc'])]
-            file_path = filedialog.askopenfilename(filetypes = files)
+            file_path = filedialog.askopenfilename(filetypes=files)
             self.file_path = file_path
             if file_path is not None and file_path != '':
                 self.run_check(file_path)
+                filename = os.path.basename(file_path)
+                self.lb_StatusSave.configure(text=f'Đã mở file "{filename}"')
+            self.__tkvar1.set('File')
         elif option == 'File mới':
             self.txt_file.delete('1.0', tk.END)
             self.file_path = ''
-        elif option == 'Save':
+            self.lb_StatusSave.configure(text='Đã tạo file mới')
+            self.__tkvar1.set('File')
+        elif option == 'Lưu':
             if self.file_path is not None and self.file_path != '':
                 try:
                     f = open(self.file_path, 'w', encoding='utf-8')
                     f.write(self.txt_file.get("1.0", tk.END))
                     f.close()
-                    self.lb_StatusSave.configure(text='File saved')
+                    self.lb_StatusSave.configure(text='Đã lưu file')
                 except Exception as e:
                     self.lb_StatusSave.configure(text=e)
+                self.__tkvar1.set('File')
                 # finally:
                 #     t = Thread(target=time.sleep(3); self.lb_StatusSave.configure(text='', args=()))
                 #     time.sleep(3)
                 #     self.lb_StatusSave.configure(text='')
-        elif option == 'Save as':
-            files = [('Text Document', ['*.txt'])]
-            file_path = filedialog.asksaveasfile(filetypes=files, defaultextension='.txt', mode='wb')
-            if file_path is not None and file_path != '':
-                pass
-            try:
-                file_path.write((self.txt_file.get("1.0", tk.END)).encode('utf-8'))
-                file_path.close()
-                self.lb_StatusSave.configure(text='File saved')
-            except Exception as e:
-                self.lb_StatusSave.configure(text=e)
-        #     finally:
+        elif option == 'Lưu thành...':
+                files = [('Text Document', ['*.txt'])]
+                file_path = filedialog.asksaveasfile(filetypes=files, defaultextension='.txt', mode='wb')
+                if file_path is not None and file_path != '':
+                    pass
+                try:
+                    file_path.write((self.txt_file.get("1.0", tk.END)).encode('utf-8'))
+                    file_path.close()
+                    filename = file_path.name.split("/")[-1]  # Lấy tên file từ đường dẫn
+                    self.lb_StatusSave.configure(text=f'Đã lưu file "{filename}"')
+                except Exception as e:
+                    self.lb_StatusSave.configure(text=e)
+                self.__tkvar1.set('File')
+    #     finally:
         #         time.sleep(3)
         #         self.lb_StatusSave.configure(text='')
-        # self.__tkvar1.set('File')
 
     def opt_editpicked(self, option):
         if option == '':
@@ -119,7 +127,7 @@ class DatnGui1App:
             AutoFixGUI(tk.Toplevel(self.master), self)
         elif option == 'Từ điển riêng':
             IgnoreGUI(tk.Toplevel(self.master), self)
-        self.__tkvar3.set('Manage')
+        self.__tkvar3.set('Quản lý')
 
     def run(self):
         self.mainwindow.mainloop()
@@ -189,7 +197,7 @@ class DatnGui1App:
         # t = Thread(target=self.run_check_threaded, args=(file,))
         # t.start()
         self.run_check_threaded(file)
-        
+
 if __name__ == '__main__':
     root = ThemedTk(theme="plastik")
     root.title('Kiểm tra lỗi chính tả')
